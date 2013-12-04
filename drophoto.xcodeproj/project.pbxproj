@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D74ECFB184D35D100355918 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF2184D35D100355918 /* launch.png */; };
+		0D74ECFC184D35D100355918 /* launch29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF3184D35D100355918 /* launch29x29.png */; };
+		0D74ECFD184D35D100355918 /* launch58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF4184D35D100355918 /* launch58x58.png */; };
+		0D74ECFE184D35D100355918 /* launch80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF5184D35D100355918 /* launch80x80.png */; };
+		0D74ECFF184D35D100355918 /* launch120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF6184D35D100355918 /* launch120x120.png */; };
+		0D74ED00184D35D100355918 /* launch960x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF7184D35D100355918 /* launch960x640.png */; };
+		0D74ED01184D35D100355918 /* launch1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF8184D35D100355918 /* launch1024x768.png */; };
+		0D74ED02184D35D100355918 /* launch1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECF9184D35D100355918 /* launch1024x1024.png */; };
+		0D74ED03184D35D100355918 /* launch1136x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D74ECFA184D35D100355918 /* launch1136x640.png */; };
+		12297096172AFB9100DC72D0 /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12297094172AFB9100DC72D0 /* PDFRenderer.m */; };
+		12297098172B041C00DC72D0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12297097172B041C00DC72D0 /* CoreText.framework */; };
+		125140B1172E205E00C38ADC /* FilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125140B0172E205E00C38ADC /* FilesViewController.m */; };
+		125140B5172E502300C38ADC /* MTPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 125140B4172E502300C38ADC /* MTPopupWindow.m */; };
+		1256A7B91727618C0046C01C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7B81727618C0046C01C /* UIKit.framework */; };
+		1256A7BB1727618C0046C01C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7BA1727618C0046C01C /* Foundation.framework */; };
+		1256A7BD1727618C0046C01C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7BC1727618C0046C01C /* CoreGraphics.framework */; };
+		1256A7C31727618C0046C01C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7C11727618C0046C01C /* InfoPlist.strings */; };
+		1256A7C51727618C0046C01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256A7C41727618C0046C01C /* main.m */; };
+		1256A7C91727618C0046C01C /* DropboxPhotoSaveAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256A7C81727618C0046C01C /* DropboxPhotoSaveAppDelegate.m */; };
+		1256A7CB1727618C0046C01C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7CA1727618C0046C01C /* Default.png */; };
+		1256A7CD1727618C0046C01C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7CC1727618C0046C01C /* Default@2x.png */; };
+		1256A7CF1727618C0046C01C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7CE1727618C0046C01C /* Default-568h@2x.png */; };
+		1256A7D21727618C0046C01C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7D01727618C0046C01C /* MainStoryboard.storyboard */; };
+		1256A7D51727618C0046C01C /* DropboxPhotoSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256A7D41727618C0046C01C /* DropboxPhotoSaveViewController.m */; };
+		1256A7DC172762A10046C01C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7DB172762A10046C01C /* DropboxSDK.framework */; };
+		1256A7DE172765300046C01C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7DD172765300046C01C /* Security.framework */; };
+		1256A7E0172765350046C01C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7DF172765350046C01C /* QuartzCore.framework */; };
+		1256A7E5172767EE0046C01C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7E4172767EE0046C01C /* MessageUI.framework */; };
+		1256A7E7172767FE0046C01C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7E6172767FE0046C01C /* CFNetwork.framework */; };
+		1256A7EB17276D9E0046C01C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7EA17276D9E0046C01C /* AVFoundation.framework */; };
+		1256A7ED1728193E0046C01C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7EC1728193E0046C01C /* MediaPlayer.framework */; };
+		1256A7EF172819440046C01C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7EE172819440046C01C /* MobileCoreServices.framework */; };
+		1256A7F11728303F0046C01C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1256A7F01728303F0046C01C /* CoreLocation.framework */; };
+		1256A7F5172832A60046C01C /* GPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256A7F4172832A60046C01C /* GPSViewController.m */; };
+		1256A7F717286BC90046C01C /* photobox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7F617286BC90046C01C /* photobox.png */; };
+		1256A7F917286BE80046C01C /* 5757.png in Resources */ = {isa = PBXBuildFile; fileRef = 1256A7F817286BE80046C01C /* 5757.png */; };
+		129B47D61738863C00BB1327 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 129B47D51738863C00BB1327 /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D74ECF2184D35D100355918 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		0D74ECF3184D35D100355918 /* launch29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch29x29.png; sourceTree = "<group>"; };
+		0D74ECF4184D35D100355918 /* launch58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch58x58.png; sourceTree = "<group>"; };
+		0D74ECF5184D35D100355918 /* launch80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch80x80.png; sourceTree = "<group>"; };
+		0D74ECF6184D35D100355918 /* launch120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch120x120.png; sourceTree = "<group>"; };
+		0D74ECF7184D35D100355918 /* launch960x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch960x640.png; sourceTree = "<group>"; };
+		0D74ECF8184D35D100355918 /* launch1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1024x768.png; sourceTree = "<group>"; };
+		0D74ECF9184D35D100355918 /* launch1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1024x1024.png; sourceTree = "<group>"; };
+		0D74ECFA184D35D100355918 /* launch1136x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1136x640.png; sourceTree = "<group>"; };
+		12297094172AFB9100DC72D0 /* PDFRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFRenderer.m; sourceTree = "<group>"; };
+		12297095172AFB9100DC72D0 /* PDFRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFRenderer.h; sourceTree = "<group>"; };
+		12297097172B041C00DC72D0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		125140AF172E205E00C38ADC /* FilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesViewController.h; sourceTree = "<group>"; };
+		125140B0172E205E00C38ADC /* FilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesViewController.m; sourceTree = "<group>"; };
+		125140B3172E502300C38ADC /* MTPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPopupWindow.h; sourceTree = "<group>"; };
+		125140B4172E502300C38ADC /* MTPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPopupWindow.m; sourceTree = "<group>"; };
+		1256A7B51727618C0046C01C /* drophoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drophoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1256A7B81727618C0046C01C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1256A7BA1727618C0046C01C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1256A7BC1727618C0046C01C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1256A7C01727618C0046C01C /* drophoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drophoto-Info.plist"; sourceTree = "<group>"; };
+		1256A7C21727618C0046C01C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1256A7C41727618C0046C01C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1256A7C61727618C0046C01C /* drophoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drophoto-Prefix.pch"; sourceTree = "<group>"; };
+		1256A7C71727618C0046C01C /* DropboxPhotoSaveAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropboxPhotoSaveAppDelegate.h; sourceTree = "<group>"; };
+		1256A7C81727618C0046C01C /* DropboxPhotoSaveAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropboxPhotoSaveAppDelegate.m; sourceTree = "<group>"; };
+		1256A7CA1727618C0046C01C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1256A7CC1727618C0046C01C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1256A7CE1727618C0046C01C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1256A7D11727618C0046C01C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1256A7D31727618C0046C01C /* DropboxPhotoSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropboxPhotoSaveViewController.h; sourceTree = "<group>"; };
+		1256A7D41727618C0046C01C /* DropboxPhotoSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropboxPhotoSaveViewController.m; sourceTree = "<group>"; };
+		1256A7DB172762A10046C01C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		1256A7DD172765300046C01C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1256A7DF172765350046C01C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1256A7E4172767EE0046C01C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1256A7E6172767FE0046C01C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1256A7EA17276D9E0046C01C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1256A7EC1728193E0046C01C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1256A7EE172819440046C01C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1256A7F01728303F0046C01C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1256A7F3172832A60046C01C /* GPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSViewController.h; sourceTree = "<group>"; };
+		1256A7F4172832A60046C01C /* GPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSViewController.m; sourceTree = "<group>"; };
+		1256A7F617286BC90046C01C /* photobox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photobox.png; sourceTree = "<group>"; };
+		1256A7F817286BE80046C01C /* 5757.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5757.png; sourceTree = "<group>"; };
+		1256A7FA17286C290046C01C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1256A7FC17286C3B0046C01C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1256A7FE17286C4A0046C01C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		129B47D41738863C00BB1327 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		129B47D51738863C00BB1327 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1256A7B21727618C0046C01C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12297098172B041C00DC72D0 /* CoreText.framework in Frameworks */,
+				1256A7F11728303F0046C01C /* CoreLocation.framework in Frameworks */,
+				1256A7EF172819440046C01C /* MobileCoreServices.framework in Frameworks */,
+				1256A7ED1728193E0046C01C /* MediaPlayer.framework in Frameworks */,
+				1256A7EB17276D9E0046C01C /* AVFoundation.framework in Frameworks */,
+				1256A7E7172767FE0046C01C /* CFNetwork.framework in Frameworks */,
+				1256A7E5172767EE0046C01C /* MessageUI.framework in Frameworks */,
+				1256A7E0172765350046C01C /* QuartzCore.framework in Frameworks */,
+				1256A7DE172765300046C01C /* Security.framework in Frameworks */,
+				1256A7B91727618C0046C01C /* UIKit.framework in Frameworks */,
+				1256A7BB1727618C0046C01C /* Foundation.framework in Frameworks */,
+				1256A7BD1727618C0046C01C /* CoreGraphics.framework in Frameworks */,
+				1256A7DC172762A10046C01C /* DropboxSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D74ECF1184D356E00355918 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D74ECF2184D35D100355918 /* launch.png */,
+				0D74ECF3184D35D100355918 /* launch29x29.png */,
+				0D74ECF4184D35D100355918 /* launch58x58.png */,
+				0D74ECF5184D35D100355918 /* launch80x80.png */,
+				0D74ECF6184D35D100355918 /* launch120x120.png */,
+				0D74ECF7184D35D100355918 /* launch960x640.png */,
+				0D74ECF8184D35D100355918 /* launch1024x768.png */,
+				0D74ECF9184D35D100355918 /* launch1024x1024.png */,
+				0D74ECFA184D35D100355918 /* launch1136x640.png */,
+				1256A7C01727618C0046C01C /* drophoto-Info.plist */,
+				1256A7C11727618C0046C01C /* InfoPlist.strings */,
+				1256A7C41727618C0046C01C /* main.m */,
+				1256A7C61727618C0046C01C /* drophoto-Prefix.pch */,
+				1256A7CA1727618C0046C01C /* Default.png */,
+				1256A7CC1727618C0046C01C /* Default@2x.png */,
+				1256A7CE1727618C0046C01C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12297093172AFB5500DC72D0 /* createpdf */ = {
+			isa = PBXGroup;
+			children = (
+				12297094172AFB9100DC72D0 /* PDFRenderer.m */,
+				12297095172AFB9100DC72D0 /* PDFRenderer.h */,
+			);
+			name = createpdf;
+			sourceTree = "<group>";
+		};
+		125140AE172E1FFE00C38ADC /*  viewfiles */ = {
+			isa = PBXGroup;
+			children = (
+				125140AF172E205E00C38ADC /* FilesViewController.h */,
+				125140B0172E205E00C38ADC /* FilesViewController.m */,
+			);
+			name = " viewfiles";
+			sourceTree = "<group>";
+		};
+		125140B2172E500200C38ADC /* popup */ = {
+			isa = PBXGroup;
+			children = (
+				125140B3172E502300C38ADC /* MTPopupWindow.h */,
+				125140B4172E502300C38ADC /* MTPopupWindow.m */,
+			);
+			name = popup;
+			sourceTree = "<group>";
+		};
+		1256A7AC1727618C0046C01C = {
+			isa = PBXGroup;
+			children = (
+				125140B2172E500200C38ADC /* popup */,
+				125140AE172E1FFE00C38ADC /*  viewfiles */,
+				12297097172B041C00DC72D0 /* CoreText.framework */,
+				12297093172AFB5500DC72D0 /* createpdf */,
+				1257AB641728B0AD00A16EC8 /* wait */,
+				1256A7FE17286C4A0046C01C /* Default-568h@2x.png */,
+				1256A7FC17286C3B0046C01C /* Default@2x.png */,
+				1256A7FA17286C290046C01C /* Default.png */,
+				1256A7F817286BE80046C01C /* 5757.png */,
+				1256A7F617286BC90046C01C /* photobox.png */,
+				1256A7F2172832870046C01C /* gpscoordinates */,
+				1256A7BE1727618C0046C01C /* DropboxPhotoSave */,
+				1256A7B71727618C0046C01C /* Frameworks */,
+				1256A7B61727618C0046C01C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1256A7B61727618C0046C01C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1256A7B51727618C0046C01C /* drophoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1256A7B71727618C0046C01C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1256A7F01728303F0046C01C /* CoreLocation.framework */,
+				1256A7EE172819440046C01C /* MobileCoreServices.framework */,
+				1256A7EC1728193E0046C01C /* MediaPlayer.framework */,
+				1256A7EA17276D9E0046C01C /* AVFoundation.framework */,
+				1256A7E6172767FE0046C01C /* CFNetwork.framework */,
+				1256A7E4172767EE0046C01C /* MessageUI.framework */,
+				1256A7DF172765350046C01C /* QuartzCore.framework */,
+				1256A7DD172765300046C01C /* Security.framework */,
+				1256A7DB172762A10046C01C /* DropboxSDK.framework */,
+				1256A7B81727618C0046C01C /* UIKit.framework */,
+				1256A7BA1727618C0046C01C /* Foundation.framework */,
+				1256A7BC1727618C0046C01C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1256A7BE1727618C0046C01C /* DropboxPhotoSave */ = {
+			isa = PBXGroup;
+			children = (
+				1256A7C71727618C0046C01C /* DropboxPhotoSaveAppDelegate.h */,
+				1256A7C81727618C0046C01C /* DropboxPhotoSaveAppDelegate.m */,
+				1256A7D01727618C0046C01C /* MainStoryboard.storyboard */,
+				1256A7D31727618C0046C01C /* DropboxPhotoSaveViewController.h */,
+				1256A7D41727618C0046C01C /* DropboxPhotoSaveViewController.m */,
+				0D74ECF1184D356E00355918 /* Supporting Files */,
+			);
+			path = DropboxPhotoSave;
+			sourceTree = "<group>";
+		};
+		1256A7F2172832870046C01C /* gpscoordinates */ = {
+			isa = PBXGroup;
+			children = (
+				1256A7F3172832A60046C01C /* GPSViewController.h */,
+				1256A7F4172832A60046C01C /* GPSViewController.m */,
+			);
+			name = gpscoordinates;
+			sourceTree = "<group>";
+		};
+		1257AB641728B0AD00A16EC8 /* wait */ = {
+			isa = PBXGroup;
+			children = (
+				129B47D41738863C00BB1327 /* MBProgressHUD.h */,
+				129B47D51738863C00BB1327 /* MBProgressHUD.m */,
+			);
+			name = wait;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1256A7B41727618C0046C01C /* drophoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1256A7D81727618C0046C01C /* Build configuration list for PBXNativeTarget "drophoto" */;
+			buildPhases = (
+				1256A7B11727618C0046C01C /* Sources */,
+				1256A7B21727618C0046C01C /* Frameworks */,
+				1256A7B31727618C0046C01C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = drophoto;
+			productName = DropboxPhotoSave;
+			productReference = 1256A7B51727618C0046C01C /* drophoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1256A7AD1727618C0046C01C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DropboxPhotoSave;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "RVC Student";
+				TargetAttributes = {
+					1256A7B41727618C0046C01C = {
+						DevelopmentTeam = DQDSR75JMK;
+					};
+				};
+			};
+			buildConfigurationList = 1256A7B01727618C0046C01C /* Build configuration list for PBXProject "drophoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1256A7AC1727618C0046C01C;
+			productRefGroup = 1256A7B61727618C0046C01C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1256A7B41727618C0046C01C /* drophoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1256A7B31727618C0046C01C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D74ECFB184D35D100355918 /* launch.png in Resources */,
+				0D74ED02184D35D100355918 /* launch1024x1024.png in Resources */,
+				1256A7C31727618C0046C01C /* InfoPlist.strings in Resources */,
+				1256A7CB1727618C0046C01C /* Default.png in Resources */,
+				1256A7CD1727618C0046C01C /* Default@2x.png in Resources */,
+				1256A7CF1727618C0046C01C /* Default-568h@2x.png in Resources */,
+				1256A7D21727618C0046C01C /* MainStoryboard.storyboard in Resources */,
+				0D74ECFC184D35D100355918 /* launch29x29.png in Resources */,
+				0D74ECFD184D35D100355918 /* launch58x58.png in Resources */,
+				0D74ED01184D35D100355918 /* launch1024x768.png in Resources */,
+				1256A7F717286BC90046C01C /* photobox.png in Resources */,
+				0D74ECFF184D35D100355918 /* launch120x120.png in Resources */,
+				0D74ED00184D35D100355918 /* launch960x640.png in Resources */,
+				0D74ED03184D35D100355918 /* launch1136x640.png in Resources */,
+				0D74ECFE184D35D100355918 /* launch80x80.png in Resources */,
+				1256A7F917286BE80046C01C /* 5757.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1256A7B11727618C0046C01C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1256A7C51727618C0046C01C /* main.m in Sources */,
+				1256A7C91727618C0046C01C /* DropboxPhotoSaveAppDelegate.m in Sources */,
+				1256A7D51727618C0046C01C /* DropboxPhotoSaveViewController.m in Sources */,
+				1256A7F5172832A60046C01C /* GPSViewController.m in Sources */,
+				12297096172AFB9100DC72D0 /* PDFRenderer.m in Sources */,
+				125140B1172E205E00C38ADC /* FilesViewController.m in Sources */,
+				125140B5172E502300C38ADC /* MTPopupWindow.m in Sources */,
+				129B47D61738863C00BB1327 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1256A7C11727618C0046C01C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1256A7C21727618C0046C01C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1256A7D01727618C0046C01C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1256A7D11727618C0046C01C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1256A7D61727618C0046C01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Konkol (3YE4ZBV4Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charles Konkol (3YE4ZBV4Z2)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1256A7D71727618C0046C01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Konkol (3YE4ZBV4Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charles Konkol (3YE4ZBV4Z2)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1256A7D91727618C0046C01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropboxPhotoSave/drophoto-Prefix.pch";
+				INFOPLIST_FILE = "DropboxPhotoSave/drophoto-Info.plist";
+				PRODUCT_NAME = drophoto;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1256A7DA1727618C0046C01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropboxPhotoSave/drophoto-Prefix.pch";
+				INFOPLIST_FILE = "DropboxPhotoSave/drophoto-Info.plist";
+				PRODUCT_NAME = drophoto;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1256A7B01727618C0046C01C /* Build configuration list for PBXProject "drophoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1256A7D61727618C0046C01C /* Debug */,
+				1256A7D71727618C0046C01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1256A7D81727618C0046C01C /* Build configuration list for PBXNativeTarget "drophoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1256A7D91727618C0046C01C /* Debug */,
+				1256A7DA1727618C0046C01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1256A7AD1727618C0046C01C /* Project object */;
+}

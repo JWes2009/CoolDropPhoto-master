@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eOE-bh-ESG">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Dropbox Photo Save View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="DropboxPhotoSaveViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="svw-mF-bzo">
+                                <rect key="frame" x="0.0" y="312" width="320" height="256"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4az-m6-JCx">
+                                        <rect key="frame" x="190" y="30" width="121" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPhoto:" destination="2" eventType="touchUpInside" id="Ihw-SA-POg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uq8-5p-1by">
+                                        <rect key="frame" x="10" y="30" width="119" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="View Files">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nj3-ju-QBB" kind="push" id="tO7-RU-3iM"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="ta1-pG-lbn">
+                                        <rect key="frame" x="10" y="93" width="301" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="doneEditing:" destination="2" eventType="editingDidEndOnExit" id="fL9-FK-o23"/>
+                                            <outlet property="delegate" destination="2" id="hPN-my-qQS"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="40V-Sa-FJq">
+                                        <rect key="frame" x="187" y="124" width="127" height="31"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Save Photo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSave:" destination="2" eventType="touchUpInside" id="7rs-Tg-R8w"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMZ-hX-aSl">
+                                        <rect key="frame" x="173" y="157" width="141" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="geo coordinates:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNK-Nj-3Ye">
+                                        <rect key="frame" x="31" y="157" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Photo Caption:(spaces will be ignored) " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0D-lD-Aw6">
+                                        <rect key="frame" x="13" y="70" width="276" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Jc4-Zr-BvZ">
+                                        <rect key="frame" x="143" y="156" width="22" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="NtQ-26-CQS" kind="push" id="oof-Wu-vUo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SX1-Ii-6Wh">
+                                        <rect key="frame" x="6" y="62" width="308" height="89"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="2cj-ew-wQY">
+                                <rect key="frame" x="10" y="76" width="301" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch.png" id="nW6-JA-oUs">
+                                <rect key="frame" x="10" y="76" width="301" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sfk-rd-cyc"/>
+                    <connections>
+                        <outlet property="ImageCover" destination="nW6-JA-oUs" id="wSN-8H-xtc"/>
+                        <outlet property="Name" destination="ta1-pG-lbn" id="NFD-bi-4Qb"/>
+                        <outlet property="Photo" destination="2cj-ew-wQY" id="pWz-sS-l6i"/>
+                        <outlet property="caption" destination="U0D-lD-Aw6" id="cxm-cD-HO5"/>
+                        <outlet property="lblCover" destination="SX1-Ii-6Wh" id="HDI-xt-EyX"/>
+                        <outlet property="locLabel" destination="LMZ-hX-aSl" id="jO5-zw-HEv"/>
+                        <outlet property="scrollview" destination="svw-mF-bzo" id="BKT-3Y-Cco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37" y="-522"/>
+        </scene>
+        <!--View Controller - Cool Drop Photo-->
+        <scene sceneID="xFT-Xn-GAJ">
+            <objects>
+                <viewController id="NtQ-26-CQS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98n-CX-3Vs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="bzB-KA-nqu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Cool Drop Photo  Cool Drop Photo allows you to take a photo and caption it. The photo (saved as PNG file) and a PDF (Photo with caption and geo coordinates hyperlink) is uploaded to your dropbox account. The iOS device photo library is not utilized.
+The photos can be found in the dropbox folder: [Dropbox Account]/SecurePhotoDrop  Requirements:  Location Services turned ON, Dropbox Account
+How to use app:
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">1. Upon 1st startup - connect to dropbox account
+2. Photo [button]: take photo
+3. Save [button]: save photo and pdf to dropbox 
+4. View [button]: view dropbox folder
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">               a.      Download Photo
+               b.      Download PDF 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="72" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="47"/>
+                                                    <textTab alignment="natural" location="72"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">                           - View Photo
+                           - Click “link to map”
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="108" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="83"/>
+                                                    <textTab alignment="natural" location="108"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="14" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cool Drop Photo" id="DWp-kU-i6A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eid-nw-Euc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="-522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tQO-QE-itv">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="eOE-bh-ESG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D8w-jE-fUn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="e0p-Y8-mjr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hM-RQ-14X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="-513"/>
+        </scene>
+        <!--Files View Controller-->
+        <scene sceneID="wna-3h-PVb">
+            <objects>
+                <tableViewController id="nj3-ju-QBB" customClass="FilesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wmd-86-ZPz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="FileCell" id="OOB-Cd-H7B">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OOB-Cd-H7B" id="qS1-dA-jDK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nj3-ju-QBB" id="Hte-Kg-ulW"/>
+                            <outlet property="delegate" destination="nj3-ju-QBB" id="S4P-zu-5eO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lLp-5H-PxB"/>
+                    <connections>
+                        <outlet property="tblView" destination="wmd-86-ZPz" id="Dh2-zA-h5q"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ull-Xd-RAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="-522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch.png" width="552" height="495"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
